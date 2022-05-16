@@ -1,6 +1,7 @@
 package com.example.project;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Exercise1 {
 
