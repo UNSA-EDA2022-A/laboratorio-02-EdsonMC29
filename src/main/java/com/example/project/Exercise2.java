@@ -25,7 +25,22 @@ public class Exercise2 {
 	}
 
 	public boolean esSubconjuntoSumaExt(int a[], int suma) {
-
-		return false;
+		int temp = 0;
+		boolean subconjunto = false;
+		// Casos base
+		if (suma == 0)
+			subconjunto = true;
+		
+		for(int i= 0; i< a.length; i++) {
+			if(a[i] < suma)
+				temp += a[i];
+			if(temp == suma)
+				break;
+			subconjunto = true;
+		}
+		if (temp != suma)
+			subconjunto = false;
+		
+		return subconjunto;
 	}
 }
